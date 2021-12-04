@@ -8,11 +8,22 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>JSON Validator</h1>
-    <textarea id="input"></textarea>
-    <button>Validate</button>
-    <textarea id="output"></textarea>
-
+    <div class="wrapper">
+      <h1 class="heading">JSON Validator</h1>
+      <main class="container">
+        <textarea class="input" placeholder="Insert JSON data here"></textarea>
+        <div class="btn-container">
+          <button class="btn">Validate and Format</button>
+        </div>
+        <textarea
+          class="output"
+          readonly
+          placeholder="Formatted JSON data will appear here"
+        ></textarea>
+        <p class="message"></p>
+      </main>
+    </div>
+    <script src="jsonlint.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

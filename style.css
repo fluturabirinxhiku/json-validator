@@ -1,8 +1,76 @@
-#input {
-  height: 50vh;
-  width: 50vh;
+body {
+  background-color: rgb(216, 231, 233);
+  font-family: Arial, Helvetica, sans-serif;
 }
-#output {
-  height: 50vh;
-  width: 50vh;
+.wrapper {
+  width: 100%;
+  padding-right: 0.75rem;
+  padding-left: 0.75rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .wrapper {
+    max-width: 1320px;
+  }
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  grid-template-rows: 0.7fr 0.2fr;
+}
+
+.heading {
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  background-color: #0f60b6;
+  border: 0;
+  border-radius: 0.4em;
+  color: #fff;
+}
+
+textarea {
+  background-color: rgb(252, 250, 251);
+}
+
+.success {
+  background-color: rgb(122, 207, 122);
+}
+.error {
+  background-color: rgb(255, 187, 187);
+}
+.visible {
+  padding: 0.5em 1em;
 }
